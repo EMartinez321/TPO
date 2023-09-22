@@ -1,0 +1,51 @@
+body{
+    background-color: coral;
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;
+}
+
+.contenedor{
+    background-color: #ffebcd;
+    width: 50%;
+    margin: 0px auto;
+    margin-top: 100px;
+    padding: 10px;
+    color: black;
+    border-radius: 8px ;
+
+}
+h3{
+    margin: 0%;
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.caja{
+    display: flex;
+    margin: 5px;
+   
+}
+.caja label{
+    flex-basis: 80px;
+
+}
+
+.caja input{
+    flex: 1;
+    padding: 5px;
+}
+
+
+button{
+    background-color: rgb(218, 127, 63);
+    padding: 5px;
+    margin-top: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pizzeria La Pizza Nostra</title>
+        <link rel="icon" href="favicon/pizza.ico">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Candal&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <script src="js/iframe.js"> </script> 
+        <link rel="stylesheet" href="css/styles.css">
+    
+    </head>
+
+ <body>
+
+	<header>
+            <section class="top-nav">
+                 <div class="logo">
+                     <a href='index.html'> <img src="img/logo.png" ></a>
+                </div>
+                   <input id="menu-toggle" type="checkbox" />
+                 <label class='menu-button-container' for="menu-toggle">
+                   <div class='menu-button'></div>
+                 </label>
+                 <ul class="menunav">
+                   <li><a href='index.html'>HOME</a></li>
+                   <li><a href='nosotros.html'>NOSOTROS</a></li>
+                   <li><a href='menu.html'>MENU</a></li>
+                   <li><a class='active' href='contacto.html'>CONTACTO</a></li>
+                 </ul>
+              </section>
+        </header>
+   <main>
+    <section>
+    
+     <div class="pizzeria">
+       <div class="pizzeria-texto">
+
+         <p>PIZZERIA    </p>
+         <p> LA PIZZA </p>
+         <p>  NOSTRA</p>
+         <h1 class="animate__animated animate__pulse">La Auténtica Pizza Napolitana</h1>
+         <div class="botonesimagen">
+             <a class="botonflota" href="menu.html">Nuestro Menu</a> 
+             <a class="botonflota" href="contacto.html">Contacto</a> 
+         </div>
+      
+        </div>
+     </div>
+      
+    </section>
+
+    <section class="contenedor-contacto">
+
+      <section>
+
+        <div class="grilla-contacto">
+         
+          <div class="titulo-form">
+           <h1>ENVIANOS UN MENSAJE</h1>
+	        </div> 
+         
+
+          <form id="formulario" onsubmit="return validarFormulario()">
+          
+          
+           <label class="nom" for="nombre">Nombre y Apellido (*)</label>
+           <input class="in-nom" type="text" placeholder="Ingrese su nombre y apellido" id="nombre" name="nombre">
+       
+
+           <label class="tel" for="telefono">Telefono (*)</label>
+           <input class="in-tel" type="text" placeholder="Ingrese su número de teléfono" id="telefono" name="telefono">
+  
+           <label class="dire" for="direccion">Domicilio</label>
+           <input class="in-dire" type="text" placeholder="Ingrese su dirección" id="direccion" name="direccion">
+           
+           <label class="mail" for="mail">E-Mail (*)</label>
+           <input class="in-mail" type="text" placeholder="Ingrese su Email" id="mail" name="mail">
+
+           <label class="mensaje" for="mensaje">Mensaje</label>
+           <textarea class="in-mensaje" type="text" name="mensaje" id="mensaje" cols="130" rows="10"></textarea>
+
+           <input class="bot-envia" type="submit" value="Enviar"> 
+          </form>
+
+         </div>
+
+        <section>
+          <div class="linea-contac">
+          </div>
+          <div class="titulo-donde">
+            <h1>DONDE ESTAMOS</h1>
+           </div> 
+          <div class="container">
+            <div class="button-container">
+                <button onclick="showLocation('location1')" class="boton1">BELGRANO</button>
+                <button onclick="showLocation('location2')" class="boton2">RECOLETA</button>
+                <button onclick="showLocation('location3')" class="boton3">PALERMO</button>
+            </div>
+            <iframe id="location-frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3286.1214249837435!2d-58.44225362453955!3d-34.55048087297338!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb4358abbe099%3A0x6af5a1c34874f843!2sMendoza%20530%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1697552025753!5m2!1ses-419!2sar"></iframe>
+        </div>
+
+        </section>
+      </section>
+
+    </section>
+
+   </main>
+   <footer>
+   
+
+       <div class="redes"> 
+                                             
+         <ul>                      
+           <li><a href="https://www.facebook.com" target="_blank" class="facebook"><i class="fab fa-facebook-f"></i></a></li>
+           <li><a href="https://www.instagram.com" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a></li>
+           <li><a href="https://www.twitter.com" target="_blank" class="twitter"><i class="fab fa-twitter"></i></a></li>
+           <li><a href="https://api.whatsapp.com/send?phone=0000000000" target="_blank" class="wpp"><i class="fab fa-whatsapp"></i></a></li>
+         </ul>          
+       </div>
+  
+       <div class="linea">
+       </div>
+
+       <div class="tex-foot">
+         <h6>Copyright 2023 © Todos los derechos reservados</h6>
+       </div>
+  
+    </footer>       
+    <script src="js/validacion.js"> </script> 
+  </body>
+</html>

@@ -62,6 +62,9 @@ header {
     /* font-weight: bold;  */
 }
 
+.menunav a.active{
+    color: darkgoldenrod;
+}
 
 .menu-button-container {
     display: none;
